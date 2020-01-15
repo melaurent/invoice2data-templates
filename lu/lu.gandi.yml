@@ -4,8 +4,11 @@ fields:
   amount_untaxed: 'Total\(excl.taxes\)€(\d+.\d+)'
   date: 'Date:([a-zA-Z]+\d{1,2},\d{4})'
   invoice_number: '[0-9]{13}'
+  vat: 'LU[0-9]{8}'
 keywords:
+- GandiInternational
 - LU26141926
+- €
 options:
   currency: EUR
   remove_whitespace: true
