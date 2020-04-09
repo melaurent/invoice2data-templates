@@ -1,0 +1,17 @@
+issuer: Hetzner
+fields:
+  amount: 'Total€(\d+.\d+)'
+  amount_untaxed: 'Total\(excl.VAT\)€(\d+.\d+)'
+  date: 'Invoicedate:(\d{2}\/\d{2}\/\d{4})'
+  invoice_number: 'Invoiceno.:([A-Z][0-9]{10})'
+  vat: 'VATReg.No.:(DE[0-9]{9})'
+keywords:
+   - HetznerOnlineGmbH
+   - DE812871812
+   - €
+options:
+   currency: EUR
+   remove_whitespace: true
+   decimal_separator: '.'
+   date_formats:
+    - '%d/%m/%Y'

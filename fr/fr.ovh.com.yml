@@ -1,0 +1,16 @@
+issuer: OVH
+fields:
+  amount: 'TotaldelafactureTTC(\d+,\d+)€'
+  amount_untaxed: 'TotaldelafactureHT(\d+,\d+)€'
+  date: Dated'émission:(\d{2}\/\d{2}\/\d{4})
+  invoice_number: 'Référencedelafacture:([A-Z]{2}[0-9]{8})'
+  vat: 'TVA(FR[0-9]{11})'
+keywords:
+   - FR22424761419
+   - €
+options:
+   currency: EUR
+   remove_whitespace: true
+   decimal_separator: ','
+   date_formats:
+    - '%d/%m/%Y'

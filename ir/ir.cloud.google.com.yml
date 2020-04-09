@@ -1,0 +1,15 @@
+issuer: Google Ireland Limited
+fields:
+  amount_untaxed: 'SubtotalinUSD\$(\d+.\d+)'
+  amount: 'TotalinUSD\$(\d+.\d+)'
+  date: 'Invoicedate([a-zA-Z]+\d{1,2},\d{4})'
+  invoice_number: 'Invoicenumber:([0-9]+)'
+  vat: 'VATnumber:(IE[0-9]{7}[A-Z]{0,2})'
+keywords:
+   - GoogleIrelandLimited
+   - IE6388047V
+   - $
+options:
+   currency: USD
+   remove_whitespace: true
+   decimal_separator: '.'
