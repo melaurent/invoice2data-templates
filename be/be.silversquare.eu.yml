@@ -1,14 +1,16 @@
 issuer: Silversquare Belgium S.A.
 fields:
-  amount: 'TOTAL\(VATincl\.\)(\d+,\d+)EUR'
-  amount_untaxed: 'Subtotal\(VATexcl\.\)(\d+,\d+)EUR'
+  amount: 'TOTAL\(VATincl\)(\d+,\d+)EUR'
+  amount_untaxed: 'Subtotal\(VATexcl\)(\d+,\d+)EUR'
   date: '(\d{2}\/\d{2}\/\d{4})'
   invoice_number: 'LE[0-9]{8}'
-  vat: 'BE[0-9]{4}\.[0-9]{3}\.[0-9]{3}'
+  vat: '(BE[0-9]{10})Terms'
 keywords:
 - SilversquareBelgium
-- BE0806.423.356
+- BE0806423356
 options:
   currency: EUR
   remove_whitespace: true
   decimal_separator: ','
+  replace:
+     - ['\.', '']
