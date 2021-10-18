@@ -2,7 +2,7 @@ issuer: Silversquare Belgium S.A.
 fields:
   amount: 'TOTAL\(VATincl\)(\d+,\d+)EUR'
   amount_untaxed: 'Subtotal\(VATexcl\)(\d+,\d+)EUR'
-  date: '(\d{2}\/\d{2}\/\d{4})'
+  date: '(\d{2}\/\d{2}\/\d{4})LE'
   invoice_number: 'LE[0-9]{8}'
   vat: '(BE[0-9]{10})Terms'
 keywords:
