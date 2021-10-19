@@ -1,7 +1,7 @@
 issuer: Hetzner
 fields:
-  amount: 'Total€(\d+.\d+)'
-  amount_untaxed: 'Total\(excl.VAT\)€(\d+.\d+)'
+  amount: 'Amountdue:€(\d+.\d+)'
+  amount_untaxed: '%€(\d+.\d+)'
   date: 'Invoicedate:(\d{2}\/\d{2}\/\d{4})'
   invoice_number: 'Invoiceno.:([A-Z][0-9]{10})'
   vat: 'VATReg.No.:(DE[0-9]{9})'
