@@ -1,15 +1,14 @@
-issuer: Google Ireland Limited
+issuer: Google Cloud EMEA Limited
 fields:
-  amount_untaxed: 'SubtotalinUSD\$(\d+.\d+)'
-  amount: 'TotalinUSD\$(\d+.\d+)'
+  amount_untaxed: 'SubtotalinEUR.(\d+\.\d+)'
+  amount: 'TotalinEUR.(\d+\.\d+)'
   date: 'Invoicedate([a-zA-Z]+\d{1,2},\d{4})'
-  invoice_number: 'Invoicenumber:([0-9]+)'
+  invoice_number: 'Invoicenumber([0-9]+)'
   vat: 'VATnumber:(IE[0-9]{7}[A-Z]{0,2})'
 keywords:
-   - GoogleIrelandLimited
-   - IE6388047V
-   - $
+   - GoogleCloudEMEALimited
+   - IE3668997OH
 options:
-   currency: USD
+   currency: EUR
    remove_whitespace: true
    decimal_separator: '.'
