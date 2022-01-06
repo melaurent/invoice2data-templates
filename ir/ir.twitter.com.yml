@@ -1,0 +1,13 @@
+issuer: Twitter International Company
+fields:
+  amount_untaxed: 'horsTVA(\d+\,\d+)'
+  amount: 'TTC(\d+\,\d+)'
+  date: 'Uitgiftedatum(\d{1,2}[a-zA-Z]+\d{4})'
+  invoice_number: 'facture([0-9]+)'
+  vat: 'TVA:(IE[0-9]{7}[A-Z]{0,2})'
+keywords:
+   - IE9803175Q
+options:
+   currency: EUR
+   remove_whitespace: true
+   decimal_separator: '.'
