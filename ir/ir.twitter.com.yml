@@ -10,4 +10,4 @@ keywords:
 options:
    currency: EUR
    remove_whitespace: true
-   decimal_separator: '.'
+   decimal_separator: ','
