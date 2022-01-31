@@ -1,0 +1,15 @@
+issuer: Proximus
+fields:
+  amount: 'TotalHTVA(\d+,\d+)'
+  amount_untaxed: 'Montanttotaldecettefacture\(TVAC\)€(\d+,\d+)'
+  date: '(\d+[a-z]+\d{4})'
+  invoice_number: 'LE[0-9]{8}'
+  vat: '(BE[0-9]{10})RPM'
+keywords:
+- BE0202239951
+options:
+  currency: EUR
+  remove_whitespace: true
+  decimal_separator: ','
+  replace:
+     - ['\.', '']
